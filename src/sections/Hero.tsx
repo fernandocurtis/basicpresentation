@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import logo from "../assets/rage-collective-logo.png";
 
 const title = ["Website", "Essentials", "for Account", "Managers"];
 
@@ -24,7 +25,7 @@ export default function Hero() {
 
       <div className="flex items-center justify-between">
         <motion.img
-          src="/brand/rage-collective-logo.png"
+          src={logo}
           alt="Rage Collective"
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}

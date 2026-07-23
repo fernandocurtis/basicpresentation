@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
+import logo from "../assets/rage-collective-logo.png";
 
 export default function Closing() {
   return (
@@ -12,7 +13,7 @@ export default function Closing() {
       </div>
 
       <img
-        src="/brand/rage-collective-logo.png"
+        src={logo}
         alt="Rage Collective"
         className="h-6 w-auto shrink-0 self-start sm:h-7"
       />
