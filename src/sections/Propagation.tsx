@@ -28,7 +28,7 @@ export default function Propagation() {
         <Kicker>A common question</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h3 className="mt-4 max-w-2xl text-balance font-display text-3xl font-medium sm:text-4xl">
+        <h3 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
           Why does one city see it, and another doesn't?
         </h3>
       </Reveal>
@@ -63,7 +63,7 @@ export default function Propagation() {
               <MapPin size={13} className="text-[var(--color-ink-dim)]" />
             </motion.div>
           ))}
-          <p className="absolute bottom-4 left-1/2 w-full -translate-x-1/2 text-center font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-dim)]">
+          <p className="absolute bottom-4 left-1/2 w-full -translate-x-1/2 text-center font-mono text-xs uppercase tracking-widest text-[var(--color-ink-dim)]">
             update rippling to edge nodes
           </p>
         </div>
@@ -78,11 +78,11 @@ export default function Propagation() {
               >
                 <div className="flex items-center gap-3">
                   <Icon size={20} className="text-[var(--color-lime)]" />
-                  <p className="font-display text-lg font-medium">{c.label}</p>
+                  <p className="font-display text-xl font-medium">{c.label}</p>
                 </div>
                 <ul className="mt-3 space-y-2">
                   {c.points.map((pt) => (
-                    <li key={pt} className="flex gap-3 text-sm text-[var(--color-ink-dim)]">
+                    <li key={pt} className="flex gap-3 text-base text-[var(--color-ink-dim)]">
                       <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-[var(--color-ink-dim)]" />
                       <span>{pt}</span>
                     </li>

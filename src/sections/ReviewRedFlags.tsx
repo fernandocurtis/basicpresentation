@@ -11,7 +11,7 @@ export default function ReviewRedFlags() {
         <Kicker>Reviewing a site</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h3 className="mt-4 max-w-2xl text-balance font-display text-3xl font-medium sm:text-4xl">
+        <h3 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
           What to look for when reviewing a site
         </h3>
       </Reveal>
@@ -36,8 +36,8 @@ export default function ReviewRedFlags() {
               className="rounded-2xl border border-[var(--color-line)] bg-[var(--color-panel)] p-6 transition-colors hover:border-[var(--color-ink-dim)]"
             >
               <Icon size={22} className="text-[var(--color-violet)]" strokeWidth={1.5} />
-              <p className="mt-4 font-display text-lg font-medium">{r.title}</p>
-              <p className="mt-2 text-sm text-[var(--color-ink-dim)]">{r.desc}</p>
+              <p className="mt-4 font-display text-xl font-medium">{r.title}</p>
+              <p className="mt-2 text-base text-[var(--color-ink-dim)]">{r.desc}</p>
             </motion.div>
           );
         })}

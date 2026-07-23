@@ -35,7 +35,7 @@ export default function QAChecklist() {
         <Kicker>Launch readiness</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h3 className="mt-4 max-w-2xl text-balance font-display text-3xl font-medium sm:text-4xl">
+        <h3 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
           The final QA checklist
         </h3>
       </Reveal>
@@ -54,7 +54,7 @@ export default function QAChecklist() {
             transition={{ duration: 0.4 }}
           />
         </div>
-        <span className="w-14 shrink-0 text-right font-mono text-sm text-[var(--color-ink-dim)]">
+        <span className="w-14 shrink-0 text-right font-mono text-base text-[var(--color-ink-dim)]">
           {pct}%
         </span>
       </div>
@@ -88,7 +88,7 @@ export default function QAChecklist() {
                 <Check size={14} strokeWidth={3} />
               </span>
               <span
-                className={`text-sm ${
+                className={`text-base ${
                   isChecked ? "text-[var(--color-ink-dim)] line-through" : "text-[var(--color-ink)]"
                 }`}
               >

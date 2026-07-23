@@ -11,7 +11,7 @@ export default function Agenda() {
         <Kicker>What we'll cover</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
+        <h2 className="mt-4 max-w-2xl text-balance font-display text-5xl font-medium sm:text-6xl">
           Four stops, one reference guide.
         </h2>
       </Reveal>
@@ -29,10 +29,10 @@ export default function Agenda() {
             className="group relative flex flex-col gap-3 overflow-hidden py-8 sm:flex-row sm:items-center sm:gap-8 sm:py-10"
           >
             <div className="absolute inset-0 -z-10 origin-left scale-x-0 bg-[var(--color-panel)] transition-transform duration-500 ease-out group-hover:scale-x-100" />
-            <span className="font-mono text-sm text-[var(--color-lime)] sm:w-14">
+            <span className="font-mono text-base text-[var(--color-lime)] sm:w-14">
               {item.number}
             </span>
-            <h3 className="font-display text-2xl font-medium text-[var(--color-ink)] transition-colors sm:w-96 sm:text-3xl">
+            <h3 className="font-display text-3xl font-medium text-[var(--color-ink)] transition-colors sm:w-96 sm:text-4xl">
               {item.title}
             </h3>
             <p className="max-w-lg text-balance text-[var(--color-ink-dim)] sm:flex-1">

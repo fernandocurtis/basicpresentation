@@ -38,8 +38,8 @@ export default function FlipCard({
         >
           <Icon size={26} strokeWidth={1.5} className="text-[var(--color-lime)]" />
           <div>
-            <p className="font-display text-2xl font-medium">{term}</p>
-            <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-dim)]">
+            <p className="font-display text-3xl font-medium">{term}</p>
+            <p className="mt-2 font-mono text-xs uppercase tracking-widest text-[var(--color-ink-dim)]">
               Tap to reveal
             </p>
           </div>
@@ -48,10 +48,10 @@ export default function FlipCard({
         <div
           className="absolute inset-0 flex flex-col justify-between rounded-2xl border border-[var(--color-lime)]/60 bg-[var(--color-lime)] p-6 text-[var(--color-void)] [backface-visibility:hidden] [transform:rotateY(180deg)]"
         >
-          <p className="font-mono text-[10px] uppercase tracking-widest opacity-70">
+          <p className="font-mono text-xs uppercase tracking-widest opacity-70">
             {term}
           </p>
-          <p className="text-balance text-base font-medium leading-snug">{def}</p>
+          <p className="text-balance text-lg font-medium leading-snug">{def}</p>
         </div>
       </motion.div>
     </motion.button>

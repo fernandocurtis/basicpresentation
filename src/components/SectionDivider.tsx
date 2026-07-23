@@ -47,7 +47,7 @@ export default function SectionDivider({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-mono text-sm uppercase tracking-[0.3em] text-[var(--color-lime)]"
+          className="font-mono text-base uppercase tracking-[0.3em] text-[var(--color-lime)]"
         >
           Section {number}
         </motion.p>
@@ -56,7 +56,7 @@ export default function SectionDivider({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="text-balance font-display text-4xl font-medium text-[var(--color-ink)] sm:text-6xl"
+          className="text-balance font-display text-5xl font-medium text-[var(--color-ink)] sm:text-7xl"
         >
           {title}
         </motion.h2>
@@ -65,7 +65,7 @@ export default function SectionDivider({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="max-w-xl text-balance text-lg text-[var(--color-ink-dim)]"
+          className="max-w-xl text-balance text-xl text-[var(--color-ink-dim)]"
         >
           {subtitle}
         </motion.p>

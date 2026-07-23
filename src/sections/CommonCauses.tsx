@@ -11,7 +11,7 @@ export default function CommonCauses() {
         <Kicker>Common causes</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h3 className="mt-4 max-w-2xl text-balance font-display text-3xl font-medium sm:text-4xl">
+        <h3 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
           Why websites go down
         </h3>
       </Reveal>
@@ -30,8 +30,8 @@ export default function CommonCauses() {
               className="group rounded-2xl border border-[var(--color-line)] p-6 transition-colors hover:border-[var(--color-coral)]/50"
             >
               <Icon size={22} className="text-[var(--color-coral)]" strokeWidth={1.5} />
-              <p className="mt-4 font-display text-lg font-medium">{c.title}</p>
-              <p className="mt-2 text-sm text-[var(--color-ink-dim)]">{c.desc}</p>
+              <p className="mt-4 font-display text-xl font-medium">{c.title}</p>
+              <p className="mt-2 text-base text-[var(--color-ink-dim)]">{c.desc}</p>
             </motion.div>
           );
         })}

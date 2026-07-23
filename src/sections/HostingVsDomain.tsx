@@ -15,7 +15,7 @@ export default function HostingVsDomain() {
         <Kicker>A common mix-up</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h3 className="mt-4 max-w-2xl text-balance font-display text-3xl font-medium sm:text-4xl">
+        <h3 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
           Hosting vs. domain: what's the difference?
         </h3>
       </Reveal>
@@ -40,8 +40,8 @@ export default function HostingVsDomain() {
             size={24}
             className={side === "domain" ? "text-[var(--color-lime)]" : "text-[var(--color-ink-dim)]"}
           />
-          <p className="mt-4 font-display text-xl font-medium">Domain</p>
-          <p className="text-sm text-[var(--color-ink-dim)]">The name people type</p>
+          <p className="mt-4 font-display text-2xl font-medium">Domain</p>
+          <p className="text-base text-[var(--color-ink-dim)]">The name people type</p>
         </button>
 
         <div className="hidden justify-center sm:flex">
@@ -61,8 +61,8 @@ export default function HostingVsDomain() {
             size={24}
             className={side === "hosting" ? "text-[var(--color-lime)]" : "text-[var(--color-ink-dim)]"}
           />
-          <p className="mt-4 font-display text-xl font-medium">Hosting</p>
-          <p className="text-sm text-[var(--color-ink-dim)]">Where the site actually lives</p>
+          <p className="mt-4 font-display text-2xl font-medium">Hosting</p>
+          <p className="text-base text-[var(--color-ink-dim)]">Where the site actually lives</p>
         </button>
       </div>
 
@@ -75,7 +75,7 @@ export default function HostingVsDomain() {
           transition={{ duration: 0.35 }}
           className="mt-8 space-y-3 rounded-2xl border border-[var(--color-line)] bg-[var(--color-panel)] p-6 sm:p-8"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-[var(--color-lime)]">
+          <p className="font-mono text-sm uppercase tracking-widest text-[var(--color-lime)]">
             {active.tagline}
           </p>
           {active.points.map((p) => (

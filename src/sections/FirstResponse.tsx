@@ -21,7 +21,7 @@ export default function FirstResponse() {
             <Kicker>First response</Kicker>
           </Reveal>
           <Reveal delay={0.05}>
-            <h3 className="mt-4 max-w-xl text-balance font-display text-3xl font-medium sm:text-4xl">
+            <h3 className="mt-4 max-w-xl text-balance font-display text-4xl font-medium sm:text-5xl">
               Site's down. What do you check first?
             </h3>
           </Reveal>
@@ -32,7 +32,7 @@ export default function FirstResponse() {
             </p>
           </Reveal>
         </div>
-        <p className="font-mono text-sm text-[var(--color-ink-dim)]">
+        <p className="font-mono text-base text-[var(--color-ink-dim)]">
           <span className="text-[var(--color-lime)]">{completed}</span>
           {" / "}
           {firstResponse.length} checked
@@ -77,13 +77,13 @@ export default function FirstResponse() {
               />
               <div>
                 <p
-                  className={`font-display text-lg font-medium transition-colors ${
+                  className={`font-display text-xl font-medium transition-colors ${
                     checked ? "text-[var(--color-ink-dim)] line-through decoration-[var(--color-lime)]/60" : "text-[var(--color-ink)]"
                   }`}
                 >
                   {step.title}
                 </p>
-                <p className="mt-1 text-sm text-[var(--color-ink-dim)]">{step.desc}</p>
+                <p className="mt-1 text-base text-[var(--color-ink-dim)]">{step.desc}</p>
               </div>
             </motion.button>
           );

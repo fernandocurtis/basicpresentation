@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
-@import "@fontsource-variable/space-grotesk";
-@import "@fontsource-variable/inter";
 @import "@fontsource/jetbrains-mono/400.css";
 @import "@fontsource/jetbrains-mono/500.css";
 
 @theme {
-  --font-display: "Space Grotesk Variable", system-ui, sans-serif;
-  --font-body: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Zalando Sans Expanded", system-ui, sans-serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   --color-ink: #f4f3ee;

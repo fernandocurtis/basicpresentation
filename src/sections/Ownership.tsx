@@ -41,7 +41,7 @@ export default function Ownership() {
             <Kicker>Who handles what</Kicker>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
+            <h2 className="mt-4 max-w-2xl text-balance font-display text-5xl font-medium sm:text-6xl">
               You, or the dev team?
             </h2>
           </Reveal>
@@ -53,7 +53,7 @@ export default function Ownership() {
           </Reveal>
         </div>
         <div className="flex items-center gap-4">
-          <p className="font-mono text-sm text-[var(--color-ink-dim)]">
+          <p className="font-mono text-base text-[var(--color-ink-dim)]">
             <span className="text-[var(--color-lime)]">{correct}</span>
             {" / "}
             {answered} correct
@@ -62,7 +62,7 @@ export default function Ownership() {
             type="button"
             data-cursor-hover
             onClick={reset}
-            className="flex items-center gap-2 rounded-full border border-[var(--color-line)] px-4 py-2 font-mono text-xs uppercase tracking-widest text-[var(--color-ink-dim)] transition-colors hover:border-[var(--color-lime)] hover:text-[var(--color-lime)]"
+            className="flex items-center gap-2 rounded-full border border-[var(--color-line)] px-4 py-2 font-mono text-sm uppercase tracking-widest text-[var(--color-ink-dim)] transition-colors hover:border-[var(--color-lime)] hover:text-[var(--color-lime)]"
           >
             <RotateCcw size={13} /> Reshuffle
           </button>
@@ -97,7 +97,7 @@ export default function Ownership() {
                     type="button"
                     data-cursor-hover
                     onClick={() => guess(i, "am")}
-                    className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--color-line)] py-2 font-mono text-[11px] uppercase tracking-wider text-[var(--color-ink-dim)] transition-colors hover:border-[var(--color-ink)] hover:text-[var(--color-ink)]"
+                    className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--color-line)] py-2 font-mono text-xs uppercase tracking-wider text-[var(--color-ink-dim)] transition-colors hover:border-[var(--color-ink)] hover:text-[var(--color-ink)]"
                   >
                     <User size={12} /> You
                   </button>
@@ -105,7 +105,7 @@ export default function Ownership() {
                     type="button"
                     data-cursor-hover
                     onClick={() => guess(i, "dev")}
-                    className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--color-line)] py-2 font-mono text-[11px] uppercase tracking-wider text-[var(--color-ink-dim)] transition-colors hover:border-[var(--color-ink)] hover:text-[var(--color-ink)]"
+                    className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-[var(--color-line)] py-2 font-mono text-xs uppercase tracking-wider text-[var(--color-ink-dim)] transition-colors hover:border-[var(--color-ink)] hover:text-[var(--color-ink)]"
                   >
                     <Code2 size={12} /> Dev team
                   </button>
@@ -113,7 +113,7 @@ export default function Ownership() {
               ) : (
                 <div className="flex items-center justify-between">
                   <span
-                    className={`flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider ${
+                    className={`flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider ${
                       item.owner === "am" ? "text-[var(--color-ink)]" : "text-[var(--color-violet)]"
                     }`}
                   >

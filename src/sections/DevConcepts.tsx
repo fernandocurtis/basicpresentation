@@ -15,7 +15,7 @@ export default function DevConcepts() {
         <Kicker>For better communication</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
+        <h2 className="mt-4 max-w-2xl text-balance font-display text-5xl font-medium sm:text-6xl">
           Concepts worth understanding
         </h2>
       </Reveal>
@@ -47,7 +47,7 @@ export default function DevConcepts() {
                 >
                   <Icon size={18} />
                 </span>
-                <span className="flex-1 font-display text-xl font-medium text-[var(--color-ink)] sm:text-2xl">
+                <span className="flex-1 font-display text-2xl font-medium text-[var(--color-ink)] sm:text-3xl">
                   {c.title}
                 </span>
                 <motion.span

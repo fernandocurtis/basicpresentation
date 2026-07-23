@@ -49,7 +49,7 @@ export default function ProgressRail() {
             className="group flex items-center gap-3"
           >
             <span
-              className={`font-mono text-[10px] uppercase tracking-widest transition-all duration-300 ${
+              className={`font-mono text-xs uppercase tracking-widest transition-all duration-300 ${
                 active === item.id
                   ? "translate-x-0 text-[var(--color-lime)] opacity-100"
                   : "translate-x-2 text-[var(--color-ink-dim)] opacity-0 group-hover:translate-x-0 group-hover:opacity-100"

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Globe } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 const title = ["Website", "Essentials", "for Account", "Managers"];
 
@@ -23,27 +23,26 @@ export default function Hero() {
       </div>
 
       <div className="flex items-center justify-between">
-        <motion.div
+        <motion.img
+          src="/brand/rage-collective-logo.png"
+          alt="Rage Collective"
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[var(--color-ink-dim)]"
-        >
-          <Globe size={14} className="text-[var(--color-lime)]" />
-          Rage Collective
-        </motion.div>
+          className="h-6 w-auto sm:h-7"
+        />
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="rounded-full border border-[var(--color-line)] px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--color-ink-dim)]"
+          className="rounded-full border border-[var(--color-line)] px-4 py-1.5 font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-ink-dim)]"
         >
           Client-Facing Reference
         </motion.div>
       </div>
 
       <div className="flex flex-1 flex-col justify-center">
-        <h1 className="font-display text-[13vw] font-medium leading-[0.92] tracking-tight text-[var(--color-ink)] sm:text-[8vw]">
+        <h1 className="font-display text-[14vw] font-medium leading-[0.92] tracking-tight text-[var(--color-ink)] sm:text-[9vw]">
           {title.map((word, i) => (
             <span key={word} className="block overflow-hidden">
               <motion.span
@@ -68,7 +67,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7 }}
-          className="mt-8 max-w-xl text-balance text-lg text-[var(--color-ink-dim)] sm:text-xl"
+          className="mt-8 max-w-xl text-balance text-xl text-[var(--color-ink-dim)] sm:text-2xl"
         >
           Key terms, diagnosing issues, understanding QA, and knowing when to
           loop in the dev team.
@@ -82,7 +81,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.9 }}
-          className="group flex items-center gap-3 font-mono text-sm uppercase tracking-[0.2em] text-[var(--color-ink)]"
+          className="group flex items-center gap-3 font-mono text-base uppercase tracking-[0.2em] text-[var(--color-ink)]"
         >
           <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] transition-colors group-hover:border-[var(--color-lime)] group-hover:text-[var(--color-lime)]">
             <motion.span
@@ -98,7 +97,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 1 }}
-          className="max-w-xs text-balance text-right font-mono text-xs uppercase leading-relaxed tracking-[0.15em] text-[var(--color-ink-dim)] sm:text-left"
+          className="max-w-xs text-balance text-right font-mono text-sm uppercase leading-relaxed tracking-[0.15em] text-[var(--color-ink-dim)] sm:text-left"
         >
           Read it end to end once — then keep it handy for the next time a
           client asks “why is my site doing that?”

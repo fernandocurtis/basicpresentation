@@ -11,7 +11,7 @@ export default function QAProcess() {
         <Kicker>Launch readiness</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h3 className="mt-4 max-w-2xl text-balance font-display text-3xl font-medium sm:text-4xl">
+        <h3 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
           The QA process before “ready”
         </h3>
       </Reveal>
@@ -44,13 +44,13 @@ export default function QAProcess() {
                 transition={{ duration: 0.5, delay: i * 0.15 }}
                 className="relative"
               >
-                <span className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-[var(--color-lime)] bg-[var(--color-void)] font-mono text-lg text-[var(--color-lime)]">
+                <span className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-[var(--color-lime)] bg-[var(--color-void)] font-mono text-xl text-[var(--color-lime)]">
                   {i + 1}
                 </span>
                 <div className="mt-5">
                   <Icon size={18} className="text-[var(--color-lime)]" />
-                  <p className="mt-3 font-display text-xl font-medium">{step.title}</p>
-                  <p className="mt-2 text-sm text-[var(--color-ink-dim)]">{step.desc}</p>
+                  <p className="mt-3 font-display text-2xl font-medium">{step.title}</p>
+                  <p className="mt-2 text-base text-[var(--color-ink-dim)]">{step.desc}</p>
                 </div>
               </motion.div>
             );

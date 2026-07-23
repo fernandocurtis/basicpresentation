@@ -17,7 +17,7 @@ export default function DiagnosisTriage() {
         <Kicker>Quick diagnosis</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
+        <h2 className="mt-4 max-w-2xl text-balance font-display text-5xl font-medium sm:text-6xl">
           Hosting, DNS, or the website itself?
         </h2>
       </Reveal>
@@ -54,8 +54,8 @@ export default function DiagnosisTriage() {
                   <LIcon size={18} />
                 </span>
                 <div className="hidden sm:block">
-                  <p className="font-display text-base font-medium">{l.label}</p>
-                  <p className="text-xs text-[var(--color-ink-dim)]">Layer {i + 1}</p>
+                  <p className="font-display text-lg font-medium">{l.label}</p>
+                  <p className="text-sm text-[var(--color-ink-dim)]">Layer {i + 1}</p>
                 </div>
               </button>
             );
@@ -77,22 +77,22 @@ export default function DiagnosisTriage() {
                 <Icon size={26} />
               </span>
               <div>
-                <p className="font-mono text-xs uppercase tracking-widest text-[var(--color-lime)]">
+                <p className="font-mono text-sm uppercase tracking-widest text-[var(--color-lime)]">
                   {layer.label}
                 </p>
-                <p className="font-display text-2xl font-medium">{layer.question}</p>
+                <p className="font-display text-3xl font-medium">{layer.question}</p>
               </div>
             </div>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-dim)]">
+                <p className="font-mono text-xs uppercase tracking-widest text-[var(--color-ink-dim)]">
                   Signature
                 </p>
                 <p className="mt-2 text-[var(--color-ink)]">{layer.signature}</p>
               </div>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-dim)]">
+                <p className="font-mono text-xs uppercase tracking-widest text-[var(--color-ink-dim)]">
                   Signs
                 </p>
                 <ul className="mt-2 space-y-1.5">
@@ -108,7 +108,7 @@ export default function DiagnosisTriage() {
 
             <div className="mt-8 flex items-center gap-3 rounded-xl border border-[var(--color-lime)]/40 bg-[var(--color-lime)]/10 p-4">
               <CheckCircle2 size={18} className="shrink-0 text-[var(--color-lime)]" />
-              <p className="text-sm text-[var(--color-ink)]">{layer.check}</p>
+              <p className="text-base text-[var(--color-ink)]">{layer.check}</p>
             </div>
           </motion.div>
         </AnimatePresence>

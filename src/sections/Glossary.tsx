@@ -21,7 +21,7 @@ export default function Glossary() {
           <Kicker>Terms worth knowing</Kicker>
         </Reveal>
         <Reveal delay={0.05}>
-          <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
+          <h2 className="mt-4 max-w-2xl text-balance font-display text-5xl font-medium sm:text-6xl">
             A quick glossary
           </h2>
         </Reveal>

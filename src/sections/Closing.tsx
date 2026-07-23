@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUp, Globe } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 export default function Closing() {
   return (
@@ -11,10 +11,11 @@ export default function Closing() {
         <div className="absolute bottom-0 left-1/2 h-[50vh] w-[50vh] -translate-x-1/2 rounded-full bg-[var(--color-lime)]/[0.1] blur-[140px]" />
       </div>
 
-      <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[var(--color-ink-dim)]">
-        <Globe size={14} className="text-[var(--color-lime)]" />
-        Rage Collective
-      </div>
+      <img
+        src="/brand/rage-collective-logo.png"
+        alt="Rage Collective"
+        className="h-6 w-auto shrink-0 self-start sm:h-7"
+      />
 
       <div className="flex flex-1 flex-col items-center justify-center gap-8 text-center">
         <motion.h2
@@ -22,7 +23,7 @@ export default function Closing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-balance font-display text-5xl font-medium leading-[1.05] sm:text-7xl"
+          className="text-balance font-display text-6xl font-medium leading-[1.05] sm:text-8xl"
         >
           When in doubt,
           <br />
@@ -33,14 +34,14 @@ export default function Closing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="max-w-md text-balance text-lg text-[var(--color-ink-dim)]"
+          className="max-w-md text-balance text-xl text-[var(--color-ink-dim)]"
         >
           A quick question beats an undone mistake, every time. Thanks for
           reading.
         </motion.p>
       </div>
 
-      <div className="flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--color-ink-dim)]">
+      <div className="flex items-center justify-between font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-ink-dim)]">
         <span>Website Essentials for Account Managers</span>
         <a
           href="#hero"

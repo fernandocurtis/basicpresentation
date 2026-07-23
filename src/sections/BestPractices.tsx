@@ -11,7 +11,7 @@ export default function BestPractices() {
         <Kicker>For everyone on the team</Kicker>
       </Reveal>
       <Reveal delay={0.05}>
-        <h3 className="mt-4 max-w-2xl text-balance font-display text-3xl font-medium sm:text-4xl">
+        <h3 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium sm:text-5xl">
           Website best practices worth knowing
         </h3>
       </Reveal>
@@ -38,8 +38,8 @@ export default function BestPractices() {
                 <Icon size={22} strokeWidth={1.5} />
               </span>
               <div>
-                <p className="font-display text-lg font-medium">{b.title}</p>
-                <p className="mt-2 text-sm text-[var(--color-ink-dim)]">{b.desc}</p>
+                <p className="font-display text-xl font-medium">{b.title}</p>
+                <p className="mt-2 text-base text-[var(--color-ink-dim)]">{b.desc}</p>
               </div>
             </motion.div>
           );
